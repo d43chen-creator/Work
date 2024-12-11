@@ -30,6 +30,49 @@
       padding-top: 2em;
       padding-left: 1em;
     }
+    .layout{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: "Poppins", serif;
+      font-weight: 500;
+      font-style: normal;
+      font-size: 16px;
+      margin-left: 30%;
+      margin-top: 10%;
+    }
+    img{
+      position: relative;
+      bottom: 100px;
+    }
+    .layout img{
+      border-radius: 15px;
+      border: 4px solid #231f20;
+    }
+    h1{
+      font-size: 40px;
+      margin-right: auto;
+    }
+    .paragraph{
+      flex-direction: column;
+      position: relative;
+      bottom: 90px;
+    }
+    .paragraph h1{
+      margin-bottom: 20px;
+      margin-left: 20px;
+    }
+    .paragraph p{
+      margin-bottom: 20px;
+      margin-left: 20px;
+      width: 50%;
+    }
+    .paragraph p:last-child{
+      margin-bottom: 0px;
+      margin-left: 20px;
+      width: 50%;
+    }
+    
     nav{
       display: flex;
       align-items: center;
@@ -59,9 +102,22 @@
     nav li:hover{
       background: #231f20;
     }
-    h1{
-      font-size: 40px;
-      margin-right: auto;
+    #project{
+      font-size: 50px;
+      font-family: "Bebas Neue", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    .rectangle{
+      width: 600px;
+      height: 470px;
+      background-color: #FFFFFF;
+      position: absolute;
+      top: 200px;
+      left: 550px;
+      z-index: -1;
+      border-radius: 15px;
+      border: 4px solid #231f20;
     }
   </style>
   </head>
@@ -81,5 +137,23 @@
         </nav>
       </div>
     </div>
+    <div class="layout">
+      <img src="can.jpeg" alt="can" width="300">
+      <div class="paragraph">
+      <h1 id="project">
+        01 project
+      </h1>
+      <p>
+        I redesigned the branding for Amsterdam Brewery, a Canadian beer company that needed a fresh touch. For the logo, I incorporated the CN Tower to represent the company’s Toronto roots and I added a star on top to pay tribute to the original logo’s design.
+      </p>
+      <p>
+        For the packaging, I retained the existing color scheme to maintain brand recognition but I also introduced subtle background elements, such as wave patterns, to represent the sense of being on a watercraft, aligning with the brand’s nautical theme. 
+      </p>
+      </div>
+    </div>
+    <div class="rectangle">
+    </div>
   </body>
 </html>
+  
+   
